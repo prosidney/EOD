@@ -1,0 +1,145 @@
+caption#format {
+    background: url(http://www.imaputz.com/cssStuff/dtable.gif) #FFF repeat-x scroll center left;
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC; 
+    display: none;
+    font: normal normal bold 13px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding: 5px
+}
+
+caption#format {
+    display: block
+}
+
+thead#format tr th, tr thead td {
+    background: url(http://www.imaputz.com/cssStuff/dtable.gif) #FFF repeat-x scroll center left;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC; 
+    font: normal normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    position: relative;
+    text-align: left
+}
+
+thead#format tr th, tr thead#format td {
+    position: inherit
+}
+
+tbody#format tr th, tbody#format tr td {
+    background: url(http://www.imaputz.com/cssStuff/dtablerow.gif) #FFF repeat-x scroll center left;
+    display: table-cell;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    font: normal normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top
+}
+
+tbody#format tr.odd th, tbody#format tr.odd td {
+    background: url(http://www.imaputz.com/cssStuff/dtablerow.gif) #EEE repeat-x scroll center left;
+    display: table-cell;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top
+}
+
+tbody#format tr:hover th, tbody#format tr:hover td, tbody#format tr.odd:hover th, tbody#format tr.odd:hover td {
+    background: url(http://www.imaputz.com/cssStuff/dtablerow.gif) #999 repeat-x scroll center left;
+    color: #FFF;
+    display: table-cell;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top
+}
+
+tbody#format tr a, tbody#format tr a:link, tbody tr a:visited {
+    color: #009;
+    text-decoration: none
+}
+
+tbody#format a:hover {
+    color: #009;
+    text-decoration: underline
+}
+
+tbody#format tr:hover th a, tbody#format tr:hover td a, tbody#format tr.odd:hover th a, tbody#format tr.odd:hover td a {
+    color: #FFF;
+    text-decoration: none
+}
+
+tbody#format tr:hover th a:hover, tbody#format tr:hover td a:hover, tbody#format tr.odd:hover th a:hover, tbody#format tr.odd:hover td a:hover {
+    color: #FFF;
+    text-decoration: underline
+}
+
+tfoot#format tr th {
+    background: url(http://www.imaputz.com/cssStuff/dtable.gif) #FFF repeat scroll center left;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC; 
+    font: normal normal bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align: right;
+    z-index: 1000000
+}
+
+tfoot#format tr td {
+    background: url(http://www.imaputz.com/cssStuff/dtable.gif) #FFF repeat scroll center left;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC; 
+    font: italic normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    z-index: 1000000
+}
+
+tfoot#format tr th, tfoot#format tr td {
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC
+}
+
+ 
+thead#format {
+    display: block
+}
+
+tfoot#format {
+    display: block;
+    position: absolute;
+    top: 620px
+}
+
+tbody#format {
+    display: block;
+    overflow: auto
+}
+
+thead#format tr th, tbody#format tr th {
+    width: 98px
+}
+
+thead#format tr th + th, tbody#format tr th + td {
+    width: 100px
+}
+
+thead#format tr th + th + th, tbody#format tr th + td + td {
+    width: 100px;}
+
+thead#format tr th + th + th + th, tbody#format tr th + td + td + td {
+    width: 100px;}
+
+thead#format tr th + th + th + th + th {
+    width: 100px;}
+
+tbody#format tr th + td + td + td + td {
+    width: 100px;}
+
+tfoot#format tr th {
+    width: 98px
+}
+
+tfoot#format tr th + td {
+    width: 526px
+}

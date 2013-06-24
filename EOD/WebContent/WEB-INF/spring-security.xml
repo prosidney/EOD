@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xsi:schemaLocation="http://www.springframework.org/schema/beans 
+								 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+								 http://www.springframework.org/schema/security 
+								 http://www.springframework.org/schema/security/spring-security-3.0.xsd" 
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			 xmlns:beans="http://www.springframework.org/schema/beans" 
+			 xmlns="http://www.springframework.org/schema/security">
+								 
+	<http auto-config="true">
+		<intercept-url pattern="/pages/_**" access="ROLE_USUARIO"/>
+	</http>
+	
+	<authentication-manager>
+		<authentication-provider>
+			<jdbc-user-service id="userService" 
+							   data-source-ref="dataSource"
+							   users-by-username-query="select email, senha, true from usuarios where email=?"
+							   authorities-by-username-query="select email,'ROLE_USUARIO' from usuarios where email=?"/>
+		</authentication-provider>
+	</authentication-manager>
+</beans:beans>
